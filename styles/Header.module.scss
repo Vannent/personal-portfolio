@@ -1,0 +1,48 @@
+@import "./colors";
+@import "./mixins";
+@import "./fonts";
+
+.headerContainer {
+  .headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+
+    .headerContentLogo {
+      z-index: 5;
+      display: flex;
+      gap: 0.5rem;
+      font-family: $playfair;
+
+      .firstName {
+        font-weight: 500;
+      }
+      .lastName {
+        font-weight: 700;
+      }
+    }
+
+    .navBar {
+      z-index: 5;
+      .navBarContent {
+        font-family: $playfair;
+        display: flex;
+        gap: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+  .headerCircle {
+    position: absolute;
+    top: -250px;
+    right: 0;
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    border: 1px solid $accent-color-light;
+    box-shadow: 0px 0px 20px 20px $accent-color-light;
+    background-color: $accent-color-light;
+    z-index: 0;
+  }
+}
