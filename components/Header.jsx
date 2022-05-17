@@ -1,7 +1,9 @@
 import React from "react";
+import { useStateContext } from "../context/StateContext";
 import styles from "../styles/Header.module.scss";
 
 const Header = () => {
+  const { aboutRef, handleAboutClick } = useStateContext();
   return (
     <div className={styles.headerContainer}>
       <div className={styles.headerCircle}></div>
@@ -12,7 +14,9 @@ const Header = () => {
         </div>
         <div className={styles.navBar}>
           <div className={styles.navBarContent}>
-            <div className={styles.navBarAbout}>About</div>
+            <div className={styles.navBarAbout} onClick={handleAboutClick}>
+              About
+            </div>
             <div className={styles.navBarProjects}>Projects</div>
 
             <div className={styles.navBarContact}>Contact</div>
