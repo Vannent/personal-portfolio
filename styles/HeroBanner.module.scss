@@ -1,0 +1,80 @@
+@import "./colors";
+@import "./mixins";
+@import "./fonts";
+
+.heroBannerContainer {
+  .heroBannerContent {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 1rem 8rem;
+    top: 0;
+    font-family: $playfair;
+    .circle {
+      position: absolute;
+      top: 250px;
+      left: -200px;
+      height: 600px;
+      width: 600px;
+      border-radius: 400px;
+      border: 1px solid $accent-color-light;
+      box-shadow: 0px 0px 20px 20px $accent-color-light;
+      background-color: $accent-color-light;
+      z-index: 1;
+    }
+
+    .circle2 {
+      position: absolute;
+      top: 440px;
+      left: -50px;
+      height: 400px;
+      width: 400px;
+      border-radius: 400px;
+      border: 1px solid $accent-color;
+      box-shadow: 0px 0px 20px 20px $accent-color;
+      background-color: $accent-color;
+      z-index: 0;
+    }
+    .circle3 {
+      position: absolute;
+      top: 250px;
+      left: -100px;
+      height: 400px;
+      width: 400px;
+      border-radius: 400px;
+      border: 1px solid $accent-color;
+      box-shadow: 0px 0px 20px 20px $accent-color;
+      background-color: $accent-color;
+      z-index: 0;
+    }
+
+    .greet {
+      margin-top: 80px;
+      font-weight: 800;
+      font-size: 1.5rem;
+      z-index: 2;
+      font-family: $playfair;
+    }
+
+    .fullName {
+      font-weight: 900;
+      font-size: 3.5rem;
+      z-index: 2;
+      color: $accent-color;
+    }
+    .slogan {
+      z-index: 2;
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: $secondary-accent-color;
+      font-family: $playfair;
+    }
+    .description {
+      margin-top: 20px;
+      z-index: 2;
+      line-height: 30px;
+      font-weight: 600;
+    }
+  }
+}
