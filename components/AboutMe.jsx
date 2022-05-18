@@ -43,7 +43,7 @@ const AboutMe = () => {
           open-mindedness.
         </p>
         <div className={styles.imageContainer}>
-          <img src="https://lh3.googleusercontent.com/gZL9ya7q5Njd2KiCKMf9z0uCa5YHTVe4YPQ9rcngtSJJWV_y7ppEDdhIohQGqlg9PnLV4rR53mCcrex4x0qfrEsD5vATfFwRpD5bDZn7vuwXFH_ml6zJY5qBcCSvva4IvA=w1280" />
+          <img src="https://i.ibb.co/C5LsSfC/image.jpg" />
         </div>
       </div>
       <div className={styles.skills}>

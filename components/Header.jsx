@@ -3,23 +3,30 @@ import { useStateContext } from "../context/StateContext";
 import styles from "../styles/Header.module.scss";
 
 const Header = () => {
-  const { aboutRef, handleAboutClick } = useStateContext();
+  const { homeRef, handleAboutClick, handleProjectsClick, handleContactClick } =
+    useStateContext();
   return (
-    <div className={styles.headerContainer}>
+    <div className={styles.headerContainer} ref={homeRef}>
       <div className={styles.headerCircle}></div>
       <div className={styles.headerContent}>
         <div className={styles.headerContentLogo}>
-          <h1 className={styles.firstName}>Roberto</h1>
-          <h1 className={styles.lastName}>Cedeno</h1>
+          <img src="https://i.ibb.co/kKGBw5g/Untitled-1.png" alt="logo" />
         </div>
         <div className={styles.navBar}>
           <div className={styles.navBarContent}>
             <div className={styles.navBarAbout} onClick={handleAboutClick}>
               About
             </div>
-            <div className={styles.navBarProjects}>Projects</div>
+            <div
+              className={styles.navBarProjects}
+              onClick={handleProjectsClick}
+            >
+              Projects
+            </div>
 
-            <div className={styles.navBarContact}>Contact</div>
+            <div className={styles.navBarContact} onClick={handleContactClick}>
+              Contact
+            </div>
           </div>
         </div>
       </div>

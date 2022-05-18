@@ -1,4 +1,5 @@
 import React from "react";
+import { useStateContext } from "../context/StateContext";
 import styles from "../styles/HeroBanner.module.scss";
 
 const HeroBanner = () => {
@@ -12,9 +13,9 @@ const HeroBanner = () => {
         <div className={styles.fullName}>Roberto Cedeno</div>
         <div className={styles.slogan}>I build things for the web.</div>
         <div className={styles.description}>
-          I’m a software engineer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products at Upstatement.
+          I’m a software engineer that specializes in front-end development. I
+          am currently focusing on growing my skills as a developer and
+          gathering experience.
         </div>
       </div>
     </div>
