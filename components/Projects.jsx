@@ -56,7 +56,7 @@ const Projects = () => {
             <div className={styles.featured}>Featured Project</div>
             <div className={styles.projectTitle}>Searchio</div>
             <p className={styles.paragraph}>
-              A minimal search engine that utilizes Google's API to render
+              A minimal search engine that utilizes Google&apos;s API to render
               searches for images and sites. Along with widgets that display
               time and the weather.
             </p>

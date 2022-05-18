@@ -36,11 +36,11 @@ const AboutMe = () => {
           missing. In Software Engineering I found a thrilling feeling I had not
           felt before, and that is when I knew that this was my passion.
           <br></br>
-          From the first Hello, World! to now being able to create full-stack
-          applications. What is even better is that I can use many of the skills
-          I learned in Research and Psychology. Critical and analytical skills,
-          innovation, adaptability, self-regulation, emotional intelligence, and
-          open-mindedness.
+          From the first &lsquo;Hello, World!&lsquo; to now being able to create
+          full-stack applications. What is even better is that I can use many of
+          the skills I learned in Research and Psychology. Critical and
+          analytical skills, innovation, adaptability, self-regulation,
+          emotional intelligence, and open-mindedness.
         </p>
         <div className={styles.imageContainer}>
           <img src="https://i.ibb.co/C5LsSfC/image.jpg" />
